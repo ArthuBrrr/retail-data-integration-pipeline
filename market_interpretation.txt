@@ -1,0 +1,27 @@
+Market Interpretation
+
+1 - Is the real estate market increasing, decreasing, or stable?
+
+Based on the analysis of the latest available data (June 2025), the French real estate market appears to be increasing.
+Compared to the same month of the previous year (June 2024), median prices have risen:
+
+Apartments: from 3,291 €/m² to 3,661 €/m² (+370 €/m²)
+Houses: from 2,108 €/m² to 2,313 €/m² (+205 €/m², approximately +9.7%)
+This simultaneous increase in both apartment and house prices indicates a clear upward trend in the national real estate market.
+
+2 - Are the most expensive departments also the most active?
+
+The results show that the most expensive departments are not necessarily the most active.
+Paris (75) is both the most expensive department (≈ 10,485 €/m²) and one of the most active in terms of transactions, which makes it an exception.
+However, other highly active departments such as Nord (59), Bouches-du-Rhône (13), or Gironde (33) have significantly lower median prices.
+Conversely, some very expensive departments (e.g. Hauts-de-Seine, Val-de-Marne) do not appear at the top of the transaction volume ranking.
+This indicates that high prices do not systematically imply high transaction volumes.
+
+3 - What regional disparities can you observe?
+
+Strong regional disparities are clearly visible:
+Île-de-France stands out with the highest prices, especially Paris and its surrounding departments.
+Southern departments (Alpes-Maritimes, Var, Corse-du-Sud) combine relatively high prices with moderate to high activity, reflecting strong attractiveness.
+Large and populous departments (Nord, Rhône, Loire-Atlantique) show very high transaction volumes but more moderate prices.
+Rural or less densely populated areas are much less represented in the top rankings, highlighting uneven market dynamics across regions.
+Overall, the French real estate market is characterized by significant geographic inequalities, driven by population density, economic attractiveness, and urbanization.

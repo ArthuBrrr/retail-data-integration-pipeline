@@ -1,0 +1,54 @@
+Technical Architecture Document (TAD)
+1. Project Objective
+
+The objective of this project is to design and implement a complete local data pipeline to analyze the French real estate market using DVF open data.
+The pipeline follows professional Data Engineering practices, from raw data ingestion to Business Intelligence analysis.
+
+2. Global Architecture
+
+The project is structured according to a classical Data Lake + Data Warehouse architecture:
+RAW → STAGING → CURATED → WAREHOUSE → BI / OUTPUTS
+
+Each layer has a clear and well-defined responsibility to ensure data quality,
+traceability, and analytical efficiency.
+
+3. Architecture Layers Description
+
+    RAW : 
+        - Contains the original DVF datasets exactly as downloaded from the data.gouv.fr platform.
+T       hese files are never modified to preserve data integrity and reproducibility.
+
+    STAGING : 
+        Contains cleaned and standardized datasets.
+        This layer handles:
+
+            - column selection
+
+            - data type normalization
+
+            - duplicate removal
+
+            - basic consistency checks
+
+    CURATED : 
+        - Contains BI-ready datasets designed for specific analytical use cases.
+        - Each curated dataset has a clear analytical grain (monthly France-level analysis, department-level comparison).
+
+    WAREHOUSE : 
+        - A local DuckDB database storing curated datasets as SQL tables.
+        - This layer enables fast analytical queries using SQL without requiring a database server.
+
+    OUTPUTS : 
+        - Contains CSV exports of the Business Intelligence query results, ensuring transparency and reproducibility of the analysis.
+
+4. Data Pipeline Flow
+
+    - Raw DVF datasets are ingested into the RAW layer :
+
+    - Data is cleaned and standardized in the STAGING layer.
+
+    - Business-oriented datasets are created in the CURATED layer.
+
+    - Curated data is loaded into DuckDB as SQL tables.
+
+    - SQL queries are executed to produce Business Intelligence results, which are exported as CSV files.

@@ -1,0 +1,21 @@
+Data Quality & Architecture
+
+1. Why should RAW data never be modified?
+
+RAW data should never be modified in order to preserve data traceability and reproducibility.
+Keeping the original data unchanged allows any transformation or analysis to be audited, reproduced, or corrected if needed. It also ensures that errors introduced in downstream processing do not affect the original source data.
+
+2. Why is CURATED data considered BI-ready?
+
+CURATED data is considered BI-ready because it is cleaned, structured, and specifically designed for analytical use cases.
+At this stage, the data has a clear analytical grain, business-oriented indicators, and only relevant fields, allowing analysts to directly run SQL queries and build insights without additional preprocessing.
+
+3. What are the main data quality limitations of DVF statistics?
+
+DVF statistics present several limitations, including missing values, especially at fine geographic levels, and aggregated indicators that hide individual transaction variability.
+Additionally, data availability may be delayed for recent months, and price indicators can be biased in areas with low transaction volumes.
+
+4. Why is DuckDB a good alternative to a traditional Data Warehouse in this lab?
+
+DuckDB is a good alternative because it is lightweight, fast, SQL-compliant, and fully local, requiring no external database server or cloud infrastructure.
+It allows efficient analytical queries directly on CSV files, making it perfectly suited for an educational environment and for prototyping Data Warehouse architectures.
