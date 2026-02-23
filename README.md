@@ -63,7 +63,7 @@ Ce projet a pour objectif de charger, analyser et exploiter des données immobil
     - Modifier et lancer les requêtes SQL dans `queries/`.
     - Utiliser le script d’exécution :
       ```
-      python scripts/run_bigquery.py
+      python scripts/biquery.py
       ```
 
 ## Structure du projet
@@ -72,7 +72,7 @@ Ce projet a pour objectif de charger, analyser et exploiter des données immobil
 ├── scripts/               # Scripts Python pour le chargement, l’analyse et BigQuery
 │   ├── load_data.py
 │   ├── analyze_data.py
-│   └── run_bigquery.py
+│   └── biquery.py
 ├── queries/               # Requêtes SQL pour BigQuery
 ├── requirements.txt       # Dépendances Python
 ├── README.me              # Documentation du projet
